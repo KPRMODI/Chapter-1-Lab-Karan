@@ -15,23 +15,23 @@ public class guess {
     
     public static void main(String[] args) {
         int Secret_Number = 3;
-        boolean guessed = false;
+        boolean guessed = false; // its false so when the user gets it right the variable turns true
 
-        while (guessed != true) { 
+        while (guessed != true) {  // while guessed isint true run this
             int guesser = getIntInput("Enter Secret Number: ");
-            if (guesser == Secret_Number) {
+            if (guesser == Secret_Number) { // checks if the guess is equal
                 System.out.print("You guessed right!");
-                guessed = true;
+                guessed = true; // ends while true
             }
             else{
                 if (guesser < Secret_Number){
-                    System.out.print("Too low! \n");
+                    System.out.print("Too low! \n"); // if the guess is too low print this
                 }
                 else{
-                    System.out.print("Too high! \n");
+                    System.out.print("Too high! \n"); // If the guess is too high print this
                 }
-                System.out.print("Incorrect, try again! \n");
+                System.out.print("Incorrect, try again! \n"); // Try again message 
             }
         }
-        }
     }
+}
