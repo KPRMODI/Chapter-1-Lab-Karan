@@ -14,11 +14,9 @@ public class temperature {
     }
     
     public static void main(String[] args) {
-        float Grade1 = getIntInput("Enter first test score: "); // I get the input and 
-        float Grade2 = getIntInput("Enter Second test score: "); // I get the input and 
-        float Grade3 = getIntInput("Enter Third test score: "); // I get the input and 
-
-        float average = (Grade1 + Grade2 + Grade3) / 3;
-        System.out.print("Your average is: "+ Math.round(average * 100.00) / 100.00); // Outputs average and I used AI to help with rounding and formatting
+        float Fahrenheit = getIntInput("Enter temperature in Fahrenheit: "); // I get the input and assign it as a float
+        float Celsius = (Fahrenheit - 32) * 5/9; // Calculate celsius with the formula
+        System.out.print(Fahrenheit +"°F is "+ Math.round(Celsius * 100.0) / 100.0+"°F"); // I used AI to found out how to round the number to 2 decimal places
+ 
     }
 }
