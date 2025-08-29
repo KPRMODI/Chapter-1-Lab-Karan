@@ -25,10 +25,10 @@ public class quiz {
         String Question1 = getInput("What is the most powerful piece in chess: ");
         if (Question1.equals(Answer1)) { //Used AI to find out syntax for .equals()
             System.out.println("Correct");
-            Final_Score += 1;
+            Final_Score += 1; // adds one if correct
         } 
         else {
-            System.out.println("Incorrect");
+            System.out.println("Incorrect"); // If incorrect
         }
 
         int Question2 = getIntInput("How many total board pieces are there on the chess board?: ");
