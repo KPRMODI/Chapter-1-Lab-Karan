@@ -12,11 +12,9 @@ public class temperature {
         System.out.print(prompt);
         return scanner.nextInt();
     }
-    
     public static void main(String[] args) {
         float Fahrenheit = getIntInput("Enter temperature in Fahrenheit: "); // I get the input and assign it as a float
         float Celsius = (Fahrenheit - 32) * 5/9; // Calculate celsius with the formula
-        System.out.print(Fahrenheit +"°F is "+ Math.round(Celsius * 100.0) / 100.0+"°F"); // I used AI to found out how to round the number to 2 decimal places
- 
+        System.out.print(Fahrenheit +"°F is "+ Math.round(Celsius * 100.0) / 100.0+"°C"); // I used AI to found out how to round the number to 2 decimal places
     }
 }

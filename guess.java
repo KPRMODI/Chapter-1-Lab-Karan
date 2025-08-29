@@ -14,17 +14,17 @@ public class guess {
     }
     
     public static void main(String[] args) {
-        int Secret_Number = 3;
+        int Secret_Number = 3; // Hard coded secret number
         boolean guessed = false; // its false so when the user gets it right the variable turns true
 
         while (guessed != true) {  // while guessed isint true run this
-            int guesser = getIntInput("Enter Secret Number: ");
+            int guesser = getIntInput("Enter Secret Number: "); // user input
             if (guesser == Secret_Number) { // checks if the guess is equal
                 System.out.print("You guessed right!");
                 guessed = true; // ends while true
             }
             else{
-                if (guesser < Secret_Number){
+                if (guesser < Secret_Number){ // checks if number is less than guessed number
                     System.out.print("Too low! \n"); // if the guess is too low print this
                 }
                 else{
